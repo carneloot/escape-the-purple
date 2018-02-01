@@ -7,7 +7,7 @@ class Obstacle extends Body {
 
     super(newX, newY, newMass);
 
-    this.speed = random(0.5, 1);
+    this.speed = random(0.5, 2);
   }
 
   draw() {

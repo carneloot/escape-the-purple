@@ -63,6 +63,19 @@ class Player extends Body {
       this.moveSpeed = this.pMoveSpeed;
     }
 
+    // Checa as bordas
+    if (this.pos.x + this.mass < 0)
+      this.pos.x = width + this.mass;
+      
+    else if (this.pos.x - this.mass >= width)
+      this.pos.x = - this.mass;
+
+    if (this.pos.y + this.mass < 0)
+      this.pos.y = height + this.mass;
+
+    else if (this.pos.y - this.mass >= height)
+      this.pos.y = - this.mass;
+
   }
 
 }
